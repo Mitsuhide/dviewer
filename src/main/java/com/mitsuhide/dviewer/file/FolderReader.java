@@ -13,37 +13,33 @@ import org.json.JSONObject;
 import org.json.JSONArray;
 
 /**
- * image set folders builder class
+ * Object for reading into a folder.
  *
  * @author Tony
  */
 public class FolderReader {
 
-    /* */
+    /* Default folder path */
     private static final String defaultPath = "E:\\Workspace\\dviewer\\src\\main\\webapp\\WEB-INF\\resources";
 
-    /* */
+    /* Default Folder File */
     private File defaultFolder;
 
-    /* */
+    /* List of ImageSet */
     private ArrayList<ImageSet> imageDirList;
 
-    /* */
     public ArrayList<ImageSet> getImageDirList() {
         return imageDirList;
     }
 
-    /* */
     public void setImageDirList(ArrayList<ImageSet> imageDirList) {
         this.imageDirList = imageDirList;
     }
 
-    /* */
     public File getDefaultFolder() {
         return defaultFolder;
     }
     
-    /* */
     public void setDefaultFolder(File defaultFolder) {
         this.defaultFolder = defaultFolder;
     }

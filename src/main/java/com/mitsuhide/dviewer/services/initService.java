@@ -18,7 +18,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 /**
- * Define webservices resources.
+ * Defined webservices resources.
  * 
  * @author Tony
  */
@@ -27,7 +27,9 @@ public class initService {
     
     private FolderReader folderRead = new FolderReader();
 
-    /* */
+    /* 
+     * Service returning the content of the default folder in a JSON Array. 
+     */
     @GET
     @Path("/")
     @Produces(MediaType.APPLICATION_JSON)
@@ -44,7 +46,9 @@ public class initService {
         }
     }
     
-    /* */
+    /* 
+     * Service returning the content of a specified folder in a JSON Object. 
+     */
     @GET
     @Path("/{name}")
     @Produces(MediaType.APPLICATION_JSON)

@@ -6,15 +6,16 @@
 package com.mitsuhide.dviewer.file;
 
 /**
- *
+ * Images grouped in a folder.
+ * 
  * @author Tony
  */
 public class ImageSet {
     
-    /* */
+    /* Path */
     private String path;
     
-    /* */
+    /* Label */
     private String label;
     
     /*private List<Image> imgList;*/
