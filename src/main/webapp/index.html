@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Angular core -->
+        <script src="js/lib/angular.min.js"></script>
+        <script src="js/appController.js"></script>
+        <title>Thumbnail Photos Gallery with Bootstrap</title>
+        <meta name="author" content="tony">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="css/thumbnail-gallery.css" rel="stylesheet">
+    </head>
+    <body ng-app="dviewer-client">
+        <div ng-controller="InitCtrl">
+            <ul ng-repeat="img in imageSet">
+                <li><a href ng-click="getImages(img.label)">{{img.label}}</a></li>
+            </ul>
+        
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb" ng-repeat="img in imagesList">
+                    <a class="thumbnail" href="#">blop
+                        <img class="img-responsive" src="{{img.path}}" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- jQuery -->
+        <script src="js/lib/jquery.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/lib/bootstrap.min.js"></script>
+    </body>
+</html>
