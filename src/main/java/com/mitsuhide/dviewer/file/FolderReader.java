@@ -9,6 +9,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
+import javax.servlet.http.HttpServletRequest;
 import org.json.JSONObject;
 import org.json.JSONArray;
 
@@ -20,7 +21,8 @@ import org.json.JSONArray;
 public class FolderReader {
 
     /* Default folder path */
-    private static final String defaultPath = "E:\\Workspace\\dviewer\\src\\main\\webapp\\WEB-INF\\resources";
+    /* TODO: Get the value from a properties file and change to the relative path. */ 
+    private static final String defaultPath = "E:\\Workspace\\dviewer\\src\\main\\webapp\\resources";
 
     /* Default Folder File */
     private File defaultFolder;
@@ -47,6 +49,7 @@ public class FolderReader {
     /*constructor */
     public FolderReader() {
         this.defaultFolder = new File(defaultPath);
+        //System.out.println(this.defaultFolder.getAbsolutePath());
         this.readDefaultFolder();
     }
 

@@ -19,7 +19,7 @@ app.controller("InitCtrl", function($scope, $http) {
             .success(function(data) {
                 $scope.imagesList = data.images;
                 console.log("response API " + data.nbImages);
-                /* load html part with path*/
+                /* TODO: load html part with path */
                 return $scope.imagesList;
             })
             .error(function() {
